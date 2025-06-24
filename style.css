@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    color: #003366;
+    font-size: 24px;
+}
+
+header .logo span {
+    color: #0077cc;
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    width: 200px;
+}
+
+header .search-bar button {
+    padding: 8px 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .search-bar button:hover {
+    background-color: #005fa3;
+}
+
+/* Layout Principal */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: fit-content;
+    position: sticky;
+    top: 90px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #0077cc;
+}
+
+/* Conteúdo */
+.content {
+    background-color: white;
+    flex: 1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    color: #0077cc;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.content ul, .content ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.content blockquote {
+    background-color: #eef6fb;
+    border-left: 5px solid #0077cc;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #555;
+    border-radius: 4px;
+}
+
+/* Destaques */
+mark {
+    background-color: yellow;
+}
+
+del {
+    color: red;
+}
+
+abbr {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 8px 8px 0 0;
+}
